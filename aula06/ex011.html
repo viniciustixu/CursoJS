@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            font: normal 15pt Arial;
+            text-align: center;
+            background-color: #a2b9bc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Checar nacionalidade</h1>
+    Digite a seu país: <input type="text" name="txt1" id="txt1">
+    <input type="button" value="Checar" onclick="checar()">
+    <div id="result">Aqui vai o resultado</div>
+    <script>
+        function checar() {
+            pais = document.getElementById('txt1')
+            if (pais == 'brasil') {
+                result.innerHTML = 'Deu certo'
+            }   result.innerHTML = 'Deu errado'
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando números</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+        input {
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="somar" onclick="somar()">
+    <div id="result"> 
+
+    </div>
+    <script>
+        function somar() {
+            var t1t2 = Number.parseInt(document.getElementById('txtn1').value) + Number.parseInt(document.getElementById('txtn2').value)
+            var res = document.getElementById('result')
+            res.innerHTML = (`A soma entre os números é: <strong>${t1t2}</strong>`)
+        }
+        
+    </script>
+</body>
+</html>

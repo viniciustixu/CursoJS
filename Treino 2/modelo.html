@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+    <section id="secNum">
+        <div>
+            <input type="number" name="txtNum" id="txtNum">
+        </div>
+        <div>
+            <input type="button" value="+" onclick="adição()"> <input type="button" value="-" onclick="subtração()">
+            <input type="button" value="*" onclick="multiplicação()"> <input type="button" value="/" onclick="divisão()">
+        </div>
+        <div>
+            <input type="number" name="txtNum2" id="txtNum2"><br>
+            <input type="button" value="Calcular" onclick="calcular()">
+        </div>
+    </section>
+    <section id="sinal">
+        +
+    </section>
+    <section id="secRes">
+        Resultado
+    </section>
+    <footer style="font-style: italic;">
+        <p>&copy; Feito por Tixu</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

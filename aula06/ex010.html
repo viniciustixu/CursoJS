@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+    <style>
+        body {
+            text-align: center;
+            font: normal 15pt Arial;
+            background-color: #a2b9bc;
+            line-height: 0.2cm;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    Velocidade do carro: <input type="number" name="input_num" id="input_num">
+    <input type="button" value="Checar" onclick="calcular()">
+    <div id="div_result">
+        
+    </div>
+    <script>
+        function calcular() {
+        var speed = Number(document.getElementById('input_num').value)
+            if (speed > 80) {
+                div_result.innerHTML = ('<p>Você excedeu o limite de velocidade, portanto, foi <strong>multado</strong>.</p>')
+                div_result.innerHTML += ('Dirija com cuidado!')
+            } else {
+                div_result.innerHTML = ('<p>Seu veículo está em ordem.</p>')
+                div_result.innerHTML += ('Dirija com cuidado!')
+            }
+        }
+
+    </script>
+</body>
+</html>
