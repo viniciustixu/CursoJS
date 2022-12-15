@@ -1,30 +1,33 @@
-agora = new Date()
-var diasem = agora.getDay()
+function chamada() {
+    var res = document.querySelector('div#resultado')
+    agora = new Date()
+    var diasem = agora.getDay()
 
+    switch(diasem) {
+        case 0:
+            res.innerHTML = '<strong>Domingo - melhorar aparência</strong>'
+            break
+        case 1:
+            res.innerHTML = '<strong>Segunda - ir no mercado</strong>'
+            break
+        case 2:
+            res.innerHTML = '<strong>Terça - botar lixo pra fora</strong>'
+            break
+        case 3:
+            res.innerHTML = '<strong>Quarta - desprocrastinar algo</strong>'
+            break
+        case 4:
+            res.innerHTML = '<strong>Quinta feita - Arrumar o quarto</strong>'
+            break
+        case 5:
+            res.innerHTML = '<strong>Sexta - lavar roupa</strong>'
+            break
+        case 6:
+            res.innerHTML = '<strong>Sabado - lavar louça</strong>'
+            break
+        default:
+            res.innerHTML = '<strong>[ERRO]</strong>'
+            break        
+    }
 
-switch(diasem) {
-    case 0:
-        console.log('Domingo - melhorar aparência')
-        break
-    case 1:
-        console.log('Segunda - ir no mercado')
-        break
-    case 2:
-        console.log('Terça - botar lixo pra fora')
-        break
-    case 3:
-        console.log('Quarta - desprocrastinar algo')
-        break
-    case 4:
-        console.log('Quinta - arrumar o quarto')
-        break
-    case 5:
-        console.log('Sexta - lavar roupa')
-        break
-    case 6:
-        console.log('Sabado - lavar louça')
-        break
-    default:
-        console.log('[ERRO]')
-        break        
 }
